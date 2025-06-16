@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Esporte News - Início</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f9fa;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1d3557;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #457b9d;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav button {
+            background-color: #1d3557;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            /* Para suavizar mudanças */
+        }
+
+        nav button:hover {
+            background-color: #2a6ebd;
+        }
+
+        /* Classe da animação pulse */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .pulse {
+            animation: pulse 0.6s ease;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+            color: #1d3557;
+        }
+
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table th,
+        table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #1d3557;
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #e2e2e2;
+        }
+
+        footer {
+            background-color: #1d3557;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            nav button {
+                padding: 8px 15px;
+            }
+
+            table {
+                width: 100%;
+            }
+
+            table th,
+            table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Portal Esportivo</h1>
+        <p>Seu lugar para acompanhar o desempenho dos times</p>
+    </header>
+
+    <nav id="menu-navegacao">
+        <!-- Botões serão inseridos via JavaScript -->
+    </nav>
+
+    <h2>Bem-vindo à Tabela do NBA</h2>
+
+    <table>
+        <tr>
+            <th>Posição</th>
+            <th>Equipe</th>
+            <th>Vitórias</th>
+            <th>Derrotas</th>
+            <th>Pontos</th>
+            <th>Seq</th>
+            <th>Casa</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Charlotte Hornets</td>
+            <td>56</td>
+            <td>12</td>
+            <td>108.7</td>
+            <td>L2</td>
+            <td>30-5</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Milwaukee Bucks</td>
+            <td>50</td>
+            <td>19</td>
+            <td>105.7</td>
+            <td>W3</td>
+            <td>24-12</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Brooklyn Nets</td>
+            <td>43</td>
+            <td>24</td>
+            <td>105.5</td>
+            <td>W1</td>
+            <td>22-11</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Atlanta Hawks</td>
+            <td>38</td>
+            <td>29</td>
+            <td>110.0</td>
+            <td>W1</td>
+            <td>20-10</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Cleveland Cavaliers</td>
+            <td>43</td>
+            <td>26</td>
+            <td>110.6</td>
+            <td>L1</td>
+            <td>25-11</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Los Angeles Clippers</td>
+            <td>40</td>
+            <td>32</td>
+            <td>116.5</td>
+            <td>W1</td>
+            <td>22-14</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Golden State Warriors</td>
+            <td>40</td>
+            <td>30</td>
+            <td>109.1</td>
+            <td>L1</td>
+            <td>20-15</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Washington Wizards</td>
+            <td>39</td>
+            <td>30</td>
+            <td>104.4</td>
+            <td>W4</td>
+            <td>24-10</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Los Angeles Lakers</td>
+            <td>34</td>
+            <td>33</td>
+            <td>104.2</td>
+            <td>W1</td>
+            <td>22-17</td>
+        </tr>
+    </table>
+
+    <footer>
+        &copy; 2025 Esporte News - Publicação de Notícias Todos os Dias
+    </footer>
+
+    <script>
+        const botoes = [
+            { texto: 'Início', link: 'Primeiro Site.html' },
+            { texto: 'Futebol', link: 'Segundo Site.html' },
+            { texto: 'Contato', link: 'Quarto Site.html' }
+        ];
+
+        const nav = document.getElementById('menu-navegacao');
+
+        botoes.forEach(botao => {
+            const btn = document.createElement('button');
+            btn.textContent = botao.texto;
+            btn.onclick = () => {
+                window.location.href = botao.link;
+            };
+
+            // Animação no mouseover/mouseout
+            btn.addEventListener('mouseenter', () => {
+                btn.classList.add('pulse');
+            });
+            btn.addEventListener('animationend', () => {
+                btn.classList.remove('pulse');
+            });
+
+            nav.appendChild(btn);
+        });
+    </script>
+</body>
+</html>
